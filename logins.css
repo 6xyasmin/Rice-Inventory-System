@@ -1,0 +1,328 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(245, 242, 222);
+}
+.wrapper {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: linear-gradient(90deg, #54880e, #f2f2f2);
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.wrapper .text-right {
+    position: absolute;
+    top: 25px;
+    right: 175px;
+    color: #f2f2f2;
+    text-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    font-size: 70px;
+    user-select: none;
+    font-family: 'Parisienne', cursive;
+}
+.wrapper .text-right::before {
+    content: 'Inventory System';
+    position: absolute;
+    top: 65px;
+    right: -50px;
+}
+.wrapper img {
+    position: absolute;
+    right: -40px;
+    bottom: -135px;
+    width: 50%;
+    transform: rotate(260deg);
+}
+.form-wrapper {
+    z-index: 2;
+}
+.wrapper .form-wrapper.login {
+    transition: .7s ease-in-out;
+    transition-delay: .7s;
+}
+.wrapper.active .form-wrapper.login {
+    transition-delay: 0s;
+    transform: translateX(-400px);
+}
+.wrapper .form-wrapper.register {
+    position: absolute;
+    margin-top: 15px;
+    transform: translateX(-400px);
+    transition: .7s ease-in-out;
+}
+.wrapper.active .form-wrapper.register {
+    transition-delay: .7s;
+    transform: translateX(0);
+}
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #f2f2f2;
+}
+.form-wrapper.register h2 {
+    margin-bottom: -15px;
+    margin-top: 15px;
+}
+
+.input-box {
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+}
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #f2f2f2;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #f2f2f2;
+    padding: 0 20px 0 40px;
+}
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+.input-box .icon {
+    position: absolute;
+    left: 15px;
+    color: #0b2b01;
+    font-size: 1.2em;
+    line-height: 55px;
+}
+button {
+    width: 100%;
+    height: 45px;
+    background: #f2f2f2;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #54880e;
+    font-weight: 500;
+}
+button:hover{
+    background-color: #b0e867;
+    color: white;
+}
+
+
+
+.sign-link-register{
+    
+    font-size: .9em;
+    text-align: center;
+    margin: 25px 0;
+    margin-top: -2px;
+}
+
+.sign-link-register p {
+    color: #100f0f;
+}
+.sign-link-register p a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: 600;
+}
+.sign-link-register p a:hover {
+    text-decoration: underline;
+    color: #b0e867;
+}
+.sign-link-login {
+    font-size: .9em;
+    text-align: center;
+    margin: 25px 0;
+}
+.sign-link-login p {
+    color: #100f0f;
+}
+.sign-link-login p a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: 600;
+}
+.sign-link-login p a:hover {
+    text-decoration: underline;
+    color: #b0e867;
+}
+
+
+
+
+@media screen and (max-width: 780px) {
+    .wrapper {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background: linear-gradient(90deg, #54880e, #f2f2f2);
+        border-radius: 50px;
+        box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+        padding: 60px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .wrapper .text-right {
+        position: absolute;
+        top: 45px;
+        right:90px;
+        color: #f2f2f2;
+        text-shadow: 0 0 20px rgba(0, 0, 0, .3);
+        font-size: 50px;
+        user-select: none;
+        font-family: 'Parisienne', cursive;
+    }
+    .wrapper .text-right::before {
+        content: 'Inventory System';
+        position: absolute;
+        top: 65px;
+        right: -50px;
+    }
+        
+    .wrapper img {
+        position: absolute;
+        right: -40px;
+        bottom: 40px;
+        width: 48%;
+        transform: rotate(260deg);
+    }
+            
+        .form-wrapper {
+            z-index: 2;
+        }
+        .wrapper .form-wrapper.login {
+            transition: .7s ease-in-out;
+            transition-delay: .7s;
+        }
+        .wrapper.active .form-wrapper.login {
+            transition-delay: 0s;
+            transform: translateX(-400px);
+        }
+        .wrapper .form-wrapper.register {
+            position: absolute;
+            margin-top: 15px;
+            transform: translateX(-400px);
+            transition: .7s ease-in-out;
+        }
+        .wrapper.active .form-wrapper.register {
+            transition-delay: .7s;
+            transform: translateX(0);
+        }
+        .form-wrapper.login h2 {
+            font-size: 25px;
+            margin-left: -120px;
+            color: #f2f2f2;
+        }
+        .form-wrapper.register h2 {
+            margin-bottom: -15px;
+            margin-top: 15px;
+            font-size: 25px;
+            margin-left: -120px;
+        }
+       
+        
+
+        .input-box {
+            position: relative;
+            width: 200px;
+            margin: 30px 0;
+        }
+        .input-box input {
+            width: 100%;
+            height: 50px;
+            background: transparent;
+            border: 2px solid #f2f2f2;
+            outline: none;
+            border-radius: 40px;
+            font-size: 1em;
+            color: #f2f2f2;
+            padding: 0 20px 0 40px;
+        }
+        .input-box input::placeholder {
+            color: rgba(255, 255, 255, .3);
+        }
+        .input-box .icon {
+            position: absolute;
+            left: 15px;
+            color: #0b2b01;
+            font-size: 1.2em;
+            line-height: 55px;
+        }
+        button {
+            width: 65%;
+            height: 45px;
+            background: #f2f2f2;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            cursor: pointer;
+            font-size: 1em;
+            color: #54880e;
+            font-weight: 500;
+        }
+        button:hover{
+            background-color: #b0e867;
+            color: white;
+        }
+        .sign-link-login{
+            
+            font-size: 15px;
+            text-align: center;
+            margin-left: -55px;
+            margin-top: 20px;
+        }
+
+        .sign-link-login p {
+            color: #100f0f;
+        }
+        .sign-link-login p a {
+            color: #f2f2f2;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .sign-link-login p a:hover {
+            text-decoration: underline;
+            color: #b0e867;
+        }
+        .sign-link-register{
+            
+            font-size: 15px;
+            text-align: center;
+            margin-left: -55px;
+            margin-top: 20px;
+        }
+
+        .sign-link-register p {
+            color: #100f0f;
+        }
+        .sign-link-login p a {
+            color: #f2f2f2;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .sign-link-register p a:hover {
+            text-decoration: underline;
+            color: #b0e867;
+        }
+
+
+
+}

@@ -1,0 +1,706 @@
+body {
+    background-color: #bccdbd;
+    margin: 0; 
+    padding: 0; 
+    transition: background-color.5s;
+}
+
+.h1class{
+
+        margin-left: 68px;
+        color: white;
+        margin-top: 55px;
+        text-shadow: 1px 1px 2px #00000024, 2px 2px 4px #00000024, 3px 3px 8px #00000031;
+       margin-bottom:-110px;
+    
+    
+            
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url("/rice/img/bg_header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #4c724c;
+    position: fixed;
+    width: auto;
+    
+}
+
+header h2 {
+    color: #052e02; 
+    font-size: 30px;
+    margin: 0;
+    margin-right: 90px;
+    justify-content: center;
+    position: fixed;
+}
+header h2 .rice-image {
+    position: absolute;
+    top: 40%;
+    left: calc(-15% + 16px); 
+    transform: translateY(-50%);
+    width: 40px;
+    height: auto;
+}
+header .open span{
+    font-size:30px;
+    margin-right:1480px; 
+     cursor: pointer;
+    color:#052e02; 
+    font-weight: 800;
+}
+
+header .open span:hover{
+color: white;
+}
+.add-image {
+    width: 30px; 
+    height: auto; 
+    display: inline-block;
+    margin-right: 5px; 
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #0d0d0d;
+    display: block;
+    transition: 0.3s;
+  }
+
+  
+.sidenav a:hover {
+    color: #f90606;
+  }
+  
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+.sidenav h2 {
+    font-size: 15px;
+    color: #000000; 
+    padding: 10px;
+    margin: 10px 0; 
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    border-radius: 5px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.649);
+}
+.admin-logo {
+    width: 80px; 
+    height: auto; 
+    margin-right: 12px;
+    margin-left: 8px; 
+}
+.nav-button {
+    margin: 20px 0;
+    padding: 9px 20px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+   font-size: x-large;
+    text-align: center;
+    color: #030303;
+    border-radius: 20px;
+    border: 2px;
+}
+
+.show {
+    left: 0; 
+}
+.nav-button:hover {
+    background-color:  #bccdbd;
+    color: white;
+}
+.nav-button button {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.table-container {
+    width: 100%; 
+    margin: 0 auto;
+    overflow-x: auto; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff62;
+    padding: 10px;
+  }
+  
+  th, td {
+    border: 0.5px solid #4d4955;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #b4c9b2;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+
+form {
+    float: right;
+    margin-right: 100px;
+}
+
+a {
+    float: left;
+    margin-right: 0px;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 40px; 
+
+
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 30px;
+    width: 30%;
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.modal-content h5 {
+    display: flex;
+    align-items: center; 
+}
+
+.modal-content .edit-image{
+    width: 30px;
+    height: 30px;
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 9px;
+    font-size: 20px;
+    cursor: pointer;
+    border:1px solid transparent;
+    border-radius: 5px;
+    border-color:rgb(209, 31, 31);
+    transition: color 0.3s;
+    background-color: solid transparent;
+}
+
+.close:hover {
+    color: #111010;
+    background-color:rgb(209, 31, 31);
+}
+select {
+    width: calc(150% - 20px); 
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"] {
+        width: calc(150% - 20px); 
+        padding: 10px;
+        margin: 5px 0; 
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
+        box-sizing: border-box; 
+    }
+    input[type="submit"]#saveButton {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    border-color: green;
+    background-color: transparent; 
+    color: #030303; 
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 0px; 
+    
+    margin-top: -2px;
+}
+
+input[type="submit"]#saveButton:hover {
+    background-color: green; 
+    color: white; 
+}
+input[type="Button"]#cancelButton {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    border-color:rgb(209, 31, 31);
+    background-color: transparent; 
+    color: #030303; 
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 0px; 
+    margin-top: -2px;
+}
+
+input[type="Button"]#cancelButton:hover {
+    background-color: rgb(209, 31, 31); 
+    color: white;
+}
+
+   
+input[type="submit"]#editSaveButton {
+    width: auto;
+    padding: 10px 20px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #030303;
+    cursor: pointer;
+    border-color:green;
+    font-weight: bold;
+    margin-right: 50px;
+    font-size: 12px;
+    margin-top: -2px;
+}
+
+input[type="submit"]#editSaveButton:hover {
+    background-color: green;
+    color: white;
+    
+}
+
+
+
+button {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+button.edit {
+    border-color: green;
+    background-color: transparent;
+    color:green;
+}
+
+button.edit:hover {
+    background-color: white;
+}
+button.archive {
+    border-color: rgb(67, 176, 182);
+    background-color: transparent;
+    color:  rgb(67, 176, 182);
+}
+
+button.archive:hover {
+    background-color:white; 
+}
+
+
+input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    background-color: transparent;
+    color: green;
+    cursor: pointer;
+    border-color: green;
+    font-weight: bold;
+    margin-right: -50px;
+    margin-top: 60px;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    
+}
+
+input[type="search"] {
+    width: auto;
+    padding: 10px 20px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    background-color: transparent; 
+    color: #030303;
+    cursor: pointer;
+    border-color: rgb(11, 11, 11);
+    font-weight: bold;
+    margin-right: 0px;
+}
+
+input[type="search"]:hover {
+    background-color:rgb(251, 253, 254);
+    
+}
+
+
+@media screen and (max-width: 780px) {
+   
+    header {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        position: fixed;
+        width: 100%;
+        padding: 5px; 
+        background-color: #f0f0f0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    }
+    header .open span {
+        font-size: 22px;
+        margin-right: 5px; 
+        cursor: pointer;
+        
+    }
+    
+   
+    header h2 {
+        font-size: 20px; 
+        margin: 0;
+       margin-left: 145px;
+        flex-grow: 1;
+        color: #052e02; 
+    }
+    
+    header h2 .rice-image {
+        position: absolute;
+        top: 40%;
+        left: -28px;
+        transform: translateY(-50%);
+        width: 25px; 
+    }
+
+    .h1class{
+        font-size: 12px;
+        margin-left: 15px;
+        margin-top: -15px;
+    }
+        
+table {
+    background-color: #ffffff62;
+    padding: 10px;
+    width: 40%; 
+    border-collapse: collapse;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 1%;
+    font-size: 13.5px;
+    margin-left:3px; 
+    border-color: #030303;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    border: 0.5px solid #4d4955;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #b4c9b2;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #0d0d0d;
+    display: block;
+    transition: 0.3s;
+  }
+
+  
+.sidenav a:hover {
+    color: #f90606;
+  }
+  
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+.sidenav h2 {
+    font-size: 10px;
+    color: #000000; 
+    padding: 10px;
+    margin: 10px 0; 
+    text-align: center;
+    display: flex; 
+    align-items: center; 
+    border-radius: 5px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.649);
+}
+.admin-logo {
+    width: 50px; 
+    height: auto; 
+    margin-right: 12px;
+    margin-left: 8px; 
+}
+
+.nav-button:hover {
+    background-color:  #bccdbd;
+    color: white;
+}
+.nav-button button {
+    padding: 5px 5px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 10px;
+    
+}
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 40px; 
+
+
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 30px;
+    width: 50%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    font-size: 10px;
+}
+
+.modal-content h5 {
+    display: flex;
+    align-items: center; 
+}
+.modal-content .edit-image{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+button.edit {
+    border-color: green;
+    background-color: transparent;
+    color:green;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+button.edit:hover {
+    background-color: white;
+}
+button.archive {
+    border-color: rgb(67, 176, 182);
+    background-color: transparent;
+    color: rgb(67, 176, 182);
+    font-size: 9px;
+}
+
+button.archive:hover {
+    background-color: white; 
+}
+
+
+input[type="submit"]#editSaveButton {
+    width: auto;
+    padding: 10px 20px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #030303;
+    cursor: pointer;
+    border-color:green;
+    font-weight: bold;
+    margin-right: 50px;
+    font-size: 9px;
+}
+
+input[type="submit"]#editSaveButton:hover {
+    background-color: green;
+    color: white;
+    
+}
+
+
+input[type="submit"] {
+width: auto;
+padding: 10px 20px;
+border: 3px solid transparent;
+border-radius: 5px;
+background-color: transparent;
+color: green;
+cursor: pointer;
+border-color: green;
+font-weight: bold;
+margin-right: -95px;
+font-size: 9px;
+margin-top: 63px;
+}
+
+input[type="submit"]:hover {
+background-color:white;
+
+}
+
+input[type="search"] {
+width: auto;
+padding: 10px 20px;
+border: 3px solid transparent;
+border-radius: 5px;
+background-color: transparent; 
+color: #030303;
+cursor: pointer;
+border-color: rgb(11, 11, 11);
+font-weight: bold;
+margin-right: 2px;
+font-size: 9px;
+}
+
+input[type="search"]:hover {
+background-color:rgb(251, 253, 254);
+
+}
+
+input[type="Button"]#cancelButton {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    border-color:rgb(209, 31, 31);
+    background-color: transparent; 
+    color: #030303; 
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 0px; 
+    font-size: 10px;
+}
+
+input[type="Button"]#cancelButton:hover {
+    background-color: rgb(209, 31, 31); 
+    color: white;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: calc(170% - 20px); 
+    padding: 10px;
+    margin: 5px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+
+select {
+    width: calc(170% - 20px); 
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+}
+

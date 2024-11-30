@@ -1,0 +1,157 @@
+footer {
+    background-color: rgb(183, 223, 183); 
+    color: inherit; 
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ccc; 
+	margin-top: 50px;
+	height: 15vh;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures icons wrap on smaller screens */
+    gap: 20px; /* Space between icons */
+}
+
+
+.footer-icon1 i{
+color: rgb(196, 1, 1);
+font-size: 25px;
+margin-left: 40px;
+margin-top: 40px;
+
+}
+.footer-icon1 b{
+	font-size: 18px;
+margin-left: 10px;
+}
+.footer-icon1 b:hover{
+	color: rgb(20, 2, 160);
+}
+.footer-icon2 i{
+	color: blue;
+	font-size: 30px;
+	margin-left: 100px;
+	margin-top: 40px;
+	
+}
+.footer-icon3 i{
+	background: linear-gradient(45deg, #833AB4, #FD1D1D, #F77737, #FCAF45, #5851DB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-size: 30px;
+	margin-left: 100px;
+	margin-top: 40px;
+	
+}
+.footer-icon4 i{
+	color: #D44638;
+	font-size: 30px;
+	margin-left: 100px;
+	margin-top: 40px;
+	
+}
+.footer-icon5 i{
+	color: #19c35f;
+	font-size: 30px;
+	margin-left: 100px;
+	margin-top: 40px;
+	
+}
+
+.footer-icon5 b{
+	font-size: 18px;
+}
+.footer-icon5 b:hover{
+	color: rgb(20, 2, 160);
+}
+
+.reserved{
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+
+@media screen and (max-width: 780px) {
+	footer {
+		background-color: rgb(183, 223, 183); 
+		color: inherit; 
+		padding: 10px;
+		text-align: center;
+		border-top: 1px solid #ccc; 
+		margin-top: 50px;
+		height: 15vh;
+	}
+	
+	.footer-container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap; /* Ensures icons wrap on smaller screens */
+		gap: 20px; /* Space between icons */
+	}
+	
+	
+	.footer-icon1 i{
+	color: rgb(196, 1, 1);
+	font-size: 15px;
+	margin-left: 10px;
+	margin-top: 40px;
+	
+	}
+	.footer-icon1 b{
+		font-size: 10px;
+	margin-left: 5px;
+	}
+	.footer-icon1 b:hover{
+		color: rgb(20, 2, 160);
+	}
+	.footer-icon2 i{
+		color: blue;
+		font-size: 15px;
+		margin-left: 10px;
+		margin-top: 40px;
+		
+	}
+	.footer-icon3 i{
+		background: linear-gradient(45deg, #833AB4, #FD1D1D, #F77737, #FCAF45, #5851DB);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 15px;
+		margin-left: 10px;
+		margin-top: 40px;
+		
+	}
+	.footer-icon4 i{
+		color: #D44638;
+		font-size: 15px;
+		margin-left: 10px;
+		margin-top: 40px;
+		
+	}
+	.footer-icon5 i{
+		color: #19c35f;
+		font-size: 15px;
+		margin-left: 30px;
+		margin-top: 40px;
+		
+	}
+	
+	.footer-icon5 b{
+		font-size: 10px;
+	}
+	.footer-icon5 b:hover{
+		color: rgb(20, 2, 160);
+	}
+	
+	.reserved{
+		margin-top: 5px;
+		font-size: 12px;
+	}
+	
+	
+
+
+
+}
