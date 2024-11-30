@@ -3,3 +3,4 @@ The Rice Inventory System is displaying the stocks and available rice and price 
 php
 html
 css
+test
